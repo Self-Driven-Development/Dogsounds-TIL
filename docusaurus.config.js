@@ -4,11 +4,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dogsound TIL',
+  title: 'Dogsounds-TIL',
   tagline: 'Today I Learned',
   favicon: 'img/favicon.ico',
   url: 'https://self-driven-development.github.io',
-  baseUrl: '/Dogsounds-TIL/',
+  baseUrl: '/',
   organizationName: 'Self-Driven-Development',
   projectName: 'Dogsounds-TIL',
   onBrokenLinks: 'throw',
@@ -34,7 +34,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/docs',
+          routeBasePath: '/TIL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -49,15 +49,15 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Dogsound TIL',
+        title: 'Dogsounds-TIL',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            to: '/docs/',
-            label: 'TIL docs',
+            to: '/TIL/',
+            label: 'TIL',
             position: 'left',
           },
         ],
@@ -66,7 +66,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'footer',
+            title: 'self-driven-development',
             items: [
               {
                 label: 'GitHub',

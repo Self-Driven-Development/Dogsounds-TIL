@@ -1,41 +1,70 @@
-# Website
+# Dogsounds TIL(Today I Learned)
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+> 매일 공부한 내용을 정리해요
 
-### Installation
+## 작성 규칙
 
-```
-$ yarn
-```
+작성 규칙은 따로 없습니다!
 
-### Local Development
+매일 **꾸준히** 작성하는 것이 목표입니다.
 
-```
-$ yarn start
-```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## 참여자
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+<table>
+  <tr>
+    <td align="center" width="150px">
+      <a href="https://github.com/kangju2000" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/23312485?v=4" alt="강주혁" />
+      </a>
+    </td>
+    <td align="center" width="150px">
+      <a href="https://github.com/hfjxjjd123" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/63008138?v=4" alt="이학림" />
+      </a>
+    </td>
+    <td align="center" width="150px">
+      <a href="https://github.com/songess" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/49236793?v=4" alt="송은수" />
+      </a>
+    </td>
+    <td align="center" width="150px">
+      <a href="https://github.com/anonymousRecords" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/97885933?v=4" alt="민세림" />
+      </a>
+    </td>
+    <td align="center" width="150px">
+      <a href="https://github.com/guesung" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/62178788?v=4" alt="박규성" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+   <td align="center">
+      <a href="https://github.com/kangju2000" target="_blank">
+        강주혁
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/hfjxjjd123" target="_blank">
+        이학림
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/songess" target="_blank">
+        송은수
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/anonymousRecords" target="_blank">
+        민세림
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/guesung" target="_blank">
+        박규성
+      </a>
+    </td>
+  </tr>
+<table>
