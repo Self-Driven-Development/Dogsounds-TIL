@@ -8,7 +8,7 @@ const config = {
   tagline: 'Today I Learned',
   favicon: 'img/favicon.ico',
   url: 'https://self-driven-development.github.io',
-  baseUrl: '/',
+  baseUrl: '/Dogsounds-TIL/',
   organizationName: 'Self-Driven-Development',
   projectName: 'Dogsounds-TIL',
   onBrokenLinks: 'throw',
