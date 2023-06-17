@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-// // @ts-check
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -8,8 +7,8 @@ const config = {
   title: 'Dogsound TIL',
   tagline: 'Today I Learned',
   favicon: 'img/favicon.ico',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://self-driven-development.github.io',
+  baseUrl: '/Dogsounds-TIL/',
   organizationName: 'Self-Driven-Development',
   projectName: 'Dogsounds-TIL',
   onBrokenLinks: 'throw',
