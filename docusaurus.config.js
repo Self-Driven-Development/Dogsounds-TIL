@@ -81,6 +81,12 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: '55PPSXAP11',
+        apiKey: 'bded4ade906245dfda8034bd40daeb7c',
+        indexName: 'til',
+        contextualSearch: true,
+      },
     }),
 };
 
