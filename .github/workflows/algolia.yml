@@ -14,6 +14,6 @@ jobs:
       - name: Algolia DocSearch
         uses: darrenjennings/algolia-docsearch-action@master
         with:
-          algolia_application_id: ${{ secrets.APPLICATION_ID }}}
-          algolia_api_key: ${{ secrets.API_KEY }}
-          file: './algolia-config.json'
+          algolia_application_id: ${{ secrets.ALGOLIA_APPLICATION_ID }}}
+          algolia_api_key: ${{ secrets.ALGOLIA_API_KEY }}
+          file: algolia-config.json
