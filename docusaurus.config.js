@@ -15,12 +15,9 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko', 'en'],
+    defaultLocale: 'en',
+    locales: ['en'],
     localeConfigs: {
-      ko: {
-        htmlLang: 'ko-KR',
-      },
       en: {
         htmlLang: 'en-US',
       },
