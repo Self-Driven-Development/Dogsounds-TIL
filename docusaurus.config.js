@@ -42,13 +42,13 @@ const config = {
           sidebarItemsGenerator: async function ({ defaultSidebarItemsGenerator, ...args }) {
             const sidebarItems = await defaultSidebarItemsGenerator(args);
             sidebarItems.map(item => {
-              if (item.label !== '전체' && item.type === 'category') {
+              if (item.label !== '개요' && item.type === 'category') {
                 item.collapsed = true;
               }
 
-              // if (/^(강주혁|이학림|송은수|민세림|박규성)$/.test(item.label)) {
-              //   item.items = item.items.reverse();
-              // }
+              if (/^(강주혁|이학림|송은수|민세림|박규성)$/.test(item.label)) {
+                item.items = item.items.reverse();
+              }
               return item;
             });
 
@@ -83,37 +83,33 @@ const config = {
         items: [
           {
             to: '/TIL/',
-            label: 'TIL',
+            label: '개요',
+            position: 'left',
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: '강주혁',
+            to: '/TIL/강주혁',
             label: '강주혁',
+            position: 'left',
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: '이학림',
+            to: '/TIL/이학림',
             label: '이학림',
+            position: 'left',
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: '송은수',
+            to: '/TIL/송은수',
             label: '송은수',
+            position: 'left',
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: '민세림',
+            to: '/TIL/민세림',
             label: '민세림',
+            position: 'left',
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: '박규성',
+            to: '/TIL/박규성',
             label: '박규성',
+            position: 'left',
           },
           {
             href: 'https://github.com/Self-Driven-Development/Dogsounds-TIL',

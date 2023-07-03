@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Introduce from './_introduce.mdx';
 import styles from './index.module.css';
+import Link from '@docusaurus/Link';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -12,6 +13,9 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <Link to="/TIL" className="button button--primary button--lg">
+          보러 가기
+        </Link>
       </div>
     </header>
   );

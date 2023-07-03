@@ -29,15 +29,3 @@ jobs:
           publish_dir: ./build
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
-
-  # update-index:
-  #   name: Update Algolia index
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Push indices to Algolia
-  #       uses: signcl/docsearch-scraper-action@master
-  #       env:
-  #         APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
-  #         API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-  #         CONFIG: '{"index_name": "til","start_urls": ["https://self-driven-development.github.io/Dogsounds-TIL/"],"sitemap_urls": ["https://self-driven-development.github.io/Dogsounds-TIL/sitemap.xml"],"sitemap_alternate_links": true,"stop_urls": [],"selectors": {"lvl1": "header h1","lvl2": "article h2","lvl3": "article h3","lvl4": "article h4","lvl5": "article h5, article td:first-child","lvl6": "article h6","text": "article p, article li, article td:last-child"},"strip_chars": " .,;:#","custom_settings": {"separatorsToIndex": "_","attributesForFaceting": ["language","version","type","docusaurus_tag"],"attributesToRetrieve": ["hierarchy","content","anchor","url","url_without_anchor","type"]}}'
