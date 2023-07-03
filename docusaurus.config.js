@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Dogsounds-TIL',
   tagline: 'Today I Learned',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://avatars.githubusercontent.com/u/132475839?s=200&v=4',
   url: 'https://self-driven-development.github.io',
   baseUrl: '/Dogsounds-TIL/',
   organizationName: 'Self-Driven-Development',
@@ -29,6 +29,10 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: 'G-QEZDXB0ZHY',
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/TIL',
@@ -48,8 +52,8 @@ const config = {
       navbar: {
         title: 'Dogsounds-TIL',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Dogsounds-TIL Logo',
+          src: 'https://avatars.githubusercontent.com/u/132475839?s=200&v=4',
         },
         items: [
           {

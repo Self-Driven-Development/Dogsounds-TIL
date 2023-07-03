@@ -18,12 +18,9 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+  // const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout description="다같이 TIL을 기록하는 공간">
       <HomepageHeader />
       <div style={{ margin: '0 auto' }}>
         <Introduce />
