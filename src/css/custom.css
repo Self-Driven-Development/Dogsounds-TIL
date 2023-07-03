@@ -32,3 +32,20 @@
 .utterances {
   margin-left: 0;
 }
+
+.navbar-github-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  transition: opacity 0.2s ease-in-out;
+  background: url(/img/github.svg) no-repeat center;
+}
+
+.navbar-github-link:hover::before {
+  opacity: 0.6;
+}
+
+[data-theme='dark'] .navbar-github-link::before {
+  background: url(/img/github-dark.svg) no-repeat center;
+}

@@ -15,11 +15,11 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ko',
+    locales: ['ko'],
     localeConfigs: {
-      en: {
-        htmlLang: 'en-US',
+      ko: {
+        htmlLang: 'ko-KR',
       },
     },
   },
@@ -34,8 +34,28 @@ const config = {
           anonymizeIP: true,
         },
         docs: {
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/TIL',
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}'],
+          sidebarItemsGenerator: async function ({ defaultSidebarItemsGenerator, ...args }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            sidebarItems.map(item => {
+              if (item.label !== '전체' && item.type === 'category') {
+                item.collapsed = true;
+              }
+
+              // if (/^(강주혁|이학림|송은수|민세림|박규성)$/.test(item.label)) {
+              //   item.items = item.items.reverse();
+              // }
+              return item;
+            });
+
+            return sidebarItems;
+          },
+          editUrl: ({ docPath }) =>
+            `https://github.com/Self-Driven-Development/TIL/tree/main/${docPath}`,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -47,8 +67,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'TIL, Today I Learned, Self-Driven-Development, Dogsounds, Dogsounds-TIL',
+        },
+      ],
+      image: 'https://avatars.githubusercontent.com/u/132475839?s=200&v=4',
       navbar: {
         title: 'Dogsounds-TIL',
         logo: {
@@ -59,7 +84,42 @@ const config = {
           {
             to: '/TIL/',
             label: 'TIL',
+          },
+          {
+            type: 'docSidebar',
             position: 'left',
+            sidebarId: '강주혁',
+            label: '강주혁',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: '이학림',
+            label: '이학림',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: '송은수',
+            label: '송은수',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: '민세림',
+            label: '민세림',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: '박규성',
+            label: '박규성',
+          },
+          {
+            href: 'https://github.com/Self-Driven-Development/Dogsounds-TIL',
+            'aria-label': 'GitHub',
+            position: 'right',
+            className: 'navbar-github-link',
           },
         ],
       },
