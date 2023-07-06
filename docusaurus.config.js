@@ -143,9 +143,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: '55PPSXAP11',
-        apiKey: 'bded4ade906245dfda8034bd40daeb7c',
-        indexName: 'til',
+        appId: 'TU9I3X8MLF',
+        apiKey: '2908a1acf283145ec35e142729828aff',
+        indexName: 'dogsounds-til',
         contextualSearch: true,
       },
     }),
