@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages and Update Algolia index
+name: Deploy to GitHub Pages
 
 on:
   push:
